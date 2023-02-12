@@ -1,11 +1,11 @@
 public class Main {
     public static void main(String[] args) {
 
-        int balans = 1000;
-        int replenishment = 1200;
-        int bonus = replenishment / 100;
+        short balans = 1000;
+        short replenishment = 1200;
+        short bonus = (short) (replenishment / 100);
 
-        int bonusBalans = balans + replenishment + bonus;
+        short bonusBalans = (short) (balans + replenishment + bonus);
 
         if (replenishment > 1000) {
             System.out.println("Your balans: " + bonusBalans + " ₽");
